@@ -1,0 +1,45 @@
+ {% extends 'base.html' %} {% load static %} {% block title %}
+<title>Mtanthauzila mawu | Mbiri</title> {% endblock title %} {% block section_header %}
+<section id="heroabout" class="d-flex align-items-center justify-content-center">
+    <div class="container position-relative">
+        <h1>Mbiri</h1>
+    </div>
+</section> {% endblock section_header %} {% block section_main %}
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="{% static 'translator/img/chichewa_logo.png' %}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+                <h3>Mtanthauzila Mawu</h3>
+                <p>
+                    Iyi ndi njira ya makono yokuthandizani kutanthauzila mawu kuchoka ku chiyakhulo cha Chingerezi kupita ku Chichewa.
+                </p>
+                <p>
+                    Cholinga chathu ndi kufuna kupitasa patsogolo ntchito yofuna kuthandiza mzika za dziko la Malawi kupeza ma uthenga ofunika pa nthito zawo komanso kutenga nawo gawo pa chitukuko cha dziko.
+                </p>
+                <p>Timakhulupira kuti ndikofunika kuti anthu azipeza mawuthenga muchilankhulo chomwe amalankhula.</p>
+                
+            </div>
+        </div>
+        <hr>
+        <div style="text-align: center;">
+            <div class="d-flex justify-content-center">
+                <div class="mr-3">
+                    <p>Developed by</p>
+                    <img class="img-responsive" style="width: 110px; height: 110px" src="{% static 'translator/img/mustLogo.jfif' %}" alt="MUST">
+                </div>
+                <!-- <div style="border-right: 2px solid yellow;"></div> -->
+                <div class="ml-3">
+                    <p>Supported by</p>
+                    <img class="img-responsive" src="{% static 'translator/img/unesco.png' %}" alt="MUST">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock section_main %}
